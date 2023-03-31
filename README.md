@@ -1,6 +1,14 @@
 # Task Manager API
 
-A RESTful API for managing tasks, users, and files using Node.js, Express.js, MongoDB, and Mongoose.
+The RESTful API is built using Node.js, Express.js, MongoDB, and Mongoose and is designed to manage tasks, users, and files. The API follows RESTful principles and allows users to perform CRUD operations on the various resources using HTTP methods.
+
+Authentication and Authorization have been implemented to ensure secure access to the API. Authentication is achieved using JSON Web Tokens (JWT), which are issued upon successful login and included in subsequent requests to authenticate the user. Authorization is implemented using middleware to check user roles and permissions before allowing access to certain routes.
+
+Middleware has been used extensively throughout the API to provide additional functionality and security. Middleware includes features such as error handling, request validation, logging, and rate limiting.
+
+The file structure of the API is organized to follow best practices for Node.js and Express.js. The API code is organized into controllers, models, and routes, with each file responsible for a specific aspect of the API's functionality.
+
+To ensure the API's quality and reliability, unit tests have been written using Jest. These tests cover all aspects of the API, including testing routes, controllers, models, and middleware. The tests are designed to be run automatically on every code change using a Continuous Integration/Continuous Deployment (CI/CD) pipeline.
 
 ## Installation
 
